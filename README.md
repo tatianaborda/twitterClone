@@ -18,6 +18,29 @@ git clone https://github.com/tatianaborda/twitterClone.git
 ```
 
 4. Modificar el archivo `application.properties` con la configuración de tu base de datos MySQL.
+   
+## Dockerización
+
+Esta aplicación se puede ejecutar fácilmente en un contenedor Docker utilizando Docker Compose. Asegúrate de tener Docker y Docker Compose instalados en tu sistema antes de continuar.
+
+### Instrucciones de Uso
+Una vez clonado el proyecto:
+1. Navega al directorio del proyecto:
+   
+   cd twitterClone
+
+2.Ejecuta el siguiente comando para construir y levantar los contenedores de la aplicación:
+
+docker-compose up
+
+Esto construirá la imagen de la aplicación y levantará los contenedores de la aplicación y la base de datos MySQL. Una vez que los contenedores estén en funcionamiento, podrás acceder a la aplicación desde tu navegador web en http://localhost:8080.
+
+3.Para detener y eliminar los contenedores, ejecuta el siguiente comando:
+
+docker-compose down
+
+Con estas simples instrucciones, podrás ejecutar la aplicación en tu entorno local utilizando Docker y Docker Compose.
+
 
 ## Instrucciones de Ejecución:
 
