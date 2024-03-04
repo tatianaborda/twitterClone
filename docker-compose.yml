@@ -1,0 +1,25 @@
+version: '2.4'
+
+services:
+  # Servicio para la aplicación Spring Boot
+  spring-app:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./target/twitterClone-0.0.1-SNAPSHOT.jar:/app/app.jar
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mysql://db:3306/twitterclone
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=salvatore1729
+    depends_on:
+      - db
+
+  # Servicio para la base de datos MySQL
+  db:
+    image: "mysql:8.0.33"
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_DATABASE=twitterclone
+      - MYSQL_ROOT_PASSWORD=salvatore1729
