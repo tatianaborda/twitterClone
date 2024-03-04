@@ -23,6 +23,7 @@ git clone https://github.com/tatianaborda/twitterClone.git
 
 1. Ejecutar el comando `mvn spring-boot:run` en la raíz del proyecto.
 2. Acceder a la aplicación desde tu navegador web en [http://localhost:8080](http://localhost:8080).
+3. Para acceder a la documentación de la API con Swagger, visita http://localhost:8080/doc/swagger-ui.html.
 
 ## Estructura del Proyecto:
 
@@ -42,3 +43,5 @@ git clone https://github.com/tatianaborda/twitterClone.git
 ## Contacto:
 
 Para cualquier pregunta o comentario sobre el proyecto, contactame a través de mi correo electrónico: tatiana0borda@gmail.com
+
+Este README ahora incluye información sobre la documentación de la API con Swagger, lo que proporciona a los usuarios una manera conveniente de explorar y probar los endpoints de la API.
